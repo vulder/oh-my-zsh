@@ -53,6 +53,9 @@ bindkey '^[[1;5C' forward-word                        # [Ctrl-RightArrow] - move
 bindkey '^[[1;5D' backward-word                       # [Ctrl-LeftArrow] - move backward one word
 bindkey '^[[c' forward-word                        # [Ctrl-RightArrow] - move forward one word
 bindkey '^[[d' backward-word                       # [Ctrl-LeftArrow] - move backward one word
+# for tmux
+bindkey '^[[1;2C' forward-word                        # [Ctrl-RightArrow] - move forward one word
+bindkey '^[[1;2D' backward-word                       # [Ctrl-LeftArrow] - move backward one word
 
 if [[ "${terminfo[kcbt]}" != "" ]]; then
   bindkey "${terminfo[kcbt]}" reverse-menu-complete   # [Shift-Tab] - move through the completion menu backwards
